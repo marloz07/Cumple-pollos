@@ -4,25 +4,19 @@
   <meta charset="UTF-8">
   <title>Cumple Pollos</title>
 </head>
-
-<body style="text-align:center; font-family:sans-serif; background:black; color:white;">
-
-<h2>Introduce la contraseña</h2>
-
-<input type="password" id="pass" style="padding:10px;">
-<button onclick="check()" style="padding:10px;">Entrar</button>
-
-<script>
-function check() {
-  var p = document.getElementById("pass").value;
-
-  if(p === "2996") {
-   window.location.href = "video.html";
-  } else {
-    alert("Contraseña incorrecta");
-  }
-}
-</script>
-
+<body style="margin:0; text-align:center; font-family:sans-serif; background:black; color:white; display:flex; flex-direction:column; justify-content:center; align-items:center; height:100vh;">
+  <h2 style="font-size:2.5rem; margin-bottom:30px;">Introduce la contraseña</h2>
+  <input type="password" id="pass" style="padding:15px; font-size:1.5rem; width:300px; border-radius:8px; border:none; text-align:center;">
+  <button onclick="check()" style="margin-top:20px; padding:15px 40px; font-size:1.5rem; border-radius:8px; border:none; cursor:pointer; background:white; color:black;">Entrar</button>
+  <script>
+    function check() {
+      var p = document.getElementById("pass").value;
+      if(p === "2996") {
+        window.location.href = "video.html";
+      } else {
+        alert("Contraseña incorrecta");
+      }
+    }
+  </script>
 </body>
 </html>
